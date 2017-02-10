@@ -1,0 +1,21 @@
+{
+  "name": "babel-plugin-express-your-if",
+  "version": "0.0.1",
+  "description": "Make if statements more like if expressions",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/babel src -d dist",
+    "pretest": "npm run build",
+    "test": "ava test",
+    "posttest": "npm run clean",
+    "clean": "rm -rf dist"
+  },
+  "author": "Hugh Rawlinson <hughr2005@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^0.18.1",
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.22.0"
+  }
+}
