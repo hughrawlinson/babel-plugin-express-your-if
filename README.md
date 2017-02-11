@@ -1,6 +1,6 @@
 # Express Your If
 
-[![Build Status](https://travis-ci.org/hughrawlinson/babel-plugin-express-your-if.svg?branch=master)](https://travis-ci.org/hughrawlinson/babel-plugin-express-your-if)
+[![Build Status](https://travis-ci.org/hughrawlinson/babel-plugin-express-your-if.svg?branch=master)](https://travis-ci.org/hughrawlinson/babel-plugin-express-your-if) [![Code Climate](https://lima.codeclimate.com/github/hughrawlinson/babel-plugin-express-your-if/badges/gpa.svg)](https://lima.codeclimate.com/github/hughrawlinson/babel-plugin-express-your-if) [![Test Coverage](https://lima.codeclimate.com/github/hughrawlinson/babel-plugin-express-your-if/badges/coverage.svg)](https://lima.codeclimate.com/github/hughrawlinson/babel-plugin-express-your-if/coverage)
 
 I got really annoyed one day that if statements in Javascript couldn't be used as expressions, so I went ahead and made Babel do it.
 
