@@ -7,7 +7,7 @@
     "build": "BABEL_ENV=production ./node_modules/.bin/babel src -d dist",
     "lint": "./node_modules/.bin/eslint src",
     "test": "./node_modules/.bin/nyc ./node_modules/.bin/ava test",
-    "travis": "./node_modules/.bin/nyc report --reporter=text-lcov | codeclimate-test-reporter"
+    "coverage": "./node_modules/.bin/nyc report --reporter=text-lcov | codeclimate-test-reporter"
   },
   "author": "Hugh Rawlinson <hughr2005@gmail.com>",
   "license": "ISC",
