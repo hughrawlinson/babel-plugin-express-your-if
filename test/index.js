@@ -61,7 +61,7 @@ test("Rewrites IfStatement with IfStatement Alternate", t => {
       return true;
     }
   })();
-}`
+}`;
 
   t.is(result.code, expectedResult);
 });
