@@ -1,6 +1,6 @@
 import test from 'ava';
 import {transform} from 'babel-core';
-import ifExpress from '../dist/index.js';
+import ifExpress from '../src/index.js';
 
 const applyExpressIf = code => transform(code, {
   plugins: [ifExpress]

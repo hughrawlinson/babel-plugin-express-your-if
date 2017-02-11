@@ -10,7 +10,7 @@ const prepareConsequent = (t, node) => {
             .slice(0,-1)
             .concat([
               t.returnStatement(node.body[node.body.length-1].expression)
-            ]))
+            ]));
     }
   } else if (t.isExpressionStatement(node)) {
     return t.returnStatement(node.expression);
@@ -30,7 +30,7 @@ const prepareAlternate = (t, node) => {
   } else {
     return null;
   }
-}
+};
 
 const prepareIf = (t, node) => {
   return Object.assign({
@@ -54,7 +54,7 @@ export default function({
             template(`(()=>{BODY})()`)({
               BODY: prepareIf(t, path.node)
             })
-          )
+          );
         }
       }
     }
