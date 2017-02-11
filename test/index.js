@@ -65,3 +65,19 @@ test("Rewrites IfStatement with IfStatement Alternate", t => {
 
   t.is(result.code, expectedResult);
 });
+
+test("README Example is accurate", t => {
+  const result = applyExpressIf("const type = 'artist'; console.log(if (type === 'track') { 'It\'s a track' } else if (type === 'artist') { 'It\'s an artist' } else { 'It\'s invalid' });");
+  const expectedResult = `const type = 'artist';
+console.log((()=>{
+  if (type === 'track') {
+    return 'It\'s a track'
+  } else if (type === 'artist') {
+    return 'It\'s an artist'
+  } else {
+    return 'It\'s invalid'
+  }
+})());`;
+
+  t.is(result.code, expectedResult);
+});

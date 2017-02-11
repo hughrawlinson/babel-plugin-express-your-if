@@ -33,6 +33,7 @@ const prepareAlternate = (t, node) => {
 };
 
 const prepareIf = (t, node) => {
+  console.log(node.type);
   return Object.assign({
       shouldSkip: true
     },
